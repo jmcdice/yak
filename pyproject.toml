@@ -1,0 +1,18 @@
+[project]
+name = "yak"
+version = "0.1.0"
+description = "Batch audio transcription using OpenAI Whisper"
+authors = [{ name = "Joey McDonald", email = "jmcdice@gmail.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = [
+    "openai>=1.0.0"
+]
+
+[project.scripts]
+yak = "yak.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
